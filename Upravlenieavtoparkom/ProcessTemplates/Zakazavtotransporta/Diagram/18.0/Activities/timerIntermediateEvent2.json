@@ -1,0 +1,99 @@
+{
+  "$type": "Comindware.Platform.Contracts.IntermediateEventActivityModel, Comindware.Platform.Contracts",
+  "GlobalAlias": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+    "Type": "Activity",
+    "Owner": "Zakazavtotransporta",
+    "Alias": "timerIntermediateEvent2"
+  },
+  "Kind": "CatchingMessage",
+  "IsInterrupting": false,
+  "MessageDefinition": {
+    "$type": "Comindware.Platform.Contracts.MessageEventDefinitionModel, Comindware.Platform.Contracts",
+    "IsThrowing": false,
+    "MessageType": {
+      "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+      "Type": "MessageTemplate",
+      "Alias": "Otvetpozayavke"
+    },
+    "MessageName": "Msg1",
+    "ReturnMapping": {
+      "$type": "Comindware.Platform.Contracts.MakeObjectRuleModel, Comindware.Platform.Contracts",
+      "RecordTemplate": {
+        "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+        "Type": "Undefined"
+      },
+      "PropertyMap": {
+        "$type": "Comindware.Platform.Contracts.PropertyMapKeyValueModel[], Comindware.Platform.Contracts",
+        "$values": [
+          {
+            "$type": "Comindware.Platform.Contracts.PropertyMapKeyValueModel, Comindware.Platform.Contracts",
+            "Key": {
+              "$type": "Comindware.Platform.Contracts.ModificationActionModel, Comindware.Platform.Contracts",
+              "PropertyPath": {
+                "$type": "Comindware.Platform.Contracts.GlobalAlias[], Comindware.Platform.Contracts",
+                "$values": [
+                  {
+                    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                    "Type": "Attribute",
+                    "Owner": "Zayavkanaavtomobil",
+                    "Alias": "Prinyato"
+                  }
+                ]
+              },
+              "PropertyAction": "Replace"
+            },
+            "Value": {
+              "$type": "Comindware.Platform.Contracts.CalculationRuleModel, Comindware.Platform.Contracts",
+              "Type": "Calculation",
+              "Definition": {
+                "$type": "Comindware.Platform.Contracts.PropertyRuleDefinitionModel, Comindware.Platform.Contracts",
+                "PropertyPath": {
+                  "$type": "Comindware.Platform.Contracts.GlobalAlias[], Comindware.Platform.Contracts",
+                  "$values": [
+                    {
+                      "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                      "Type": "MessageTemplateProperty",
+                      "Owner": "Otvetpozayavke",
+                      "Alias": "Prinyato"
+                    }
+                  ]
+                },
+                "Type": "Property"
+              }
+            }
+          }
+        ]
+      },
+      "Type": "MakeObject"
+    }
+  },
+  "BehaviourState": "Undefined",
+  "Title": "Планирование выполнено",
+  "IsTitleSet": false,
+  "Position": {
+    "$type": "Comindware.Platform.Contracts.VectorModel, Comindware.Platform.Contracts",
+    "X": 600.0,
+    "Y": 602.813916872842
+  },
+  "Size": {
+    "$type": "Comindware.Platform.Contracts.DimensionsModel, Comindware.Platform.Contracts",
+    "Width": 40.0,
+    "Height": 40.0
+  },
+  "Owner": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+    "Type": "Activity",
+    "Owner": "Zakazavtotransporta",
+    "Alias": "lane3"
+  },
+  "OwnerEmbeddedProcessActivityAlias": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+    "Type": "Undefined"
+  },
+  "MountedOnAlias": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+    "Type": "Undefined"
+  },
+  "Type": "IntermediateEvent"
+}

@@ -1,0 +1,150 @@
+{
+  "$type": "Comindware.Platform.Contracts.IntermediateEventActivityModel, Comindware.Platform.Contracts",
+  "GlobalAlias": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+    "Type": "Activity",
+    "Owner": "Zakazavtotransporta",
+    "Alias": "timerIntermediateEvent1"
+  },
+  "Kind": "ThrowingMessage",
+  "IsInterrupting": false,
+  "MessageDefinition": {
+    "$type": "Comindware.Platform.Contracts.MessageEventDefinitionModel, Comindware.Platform.Contracts",
+    "IsThrowing": true,
+    "MessageType": {
+      "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+      "Type": "MessageTemplate",
+      "Alias": "Msg"
+    },
+    "MessageName": "MsgForPassenger",
+    "MessageReceiver": {
+      "$type": "Comindware.Platform.Contracts.MessageReceiverExternalSocketDefinitionModel, Comindware.Platform.Contracts",
+      "ReceiverAddressType": "cmw.message.ExternalSocketAddressType",
+      "Type": "ExternalSocket"
+    },
+    "InputMapping": {
+      "$type": "Comindware.Platform.Contracts.MessagePayloadDefinitionModel, Comindware.Platform.Contracts",
+      "MessageType": {
+        "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+        "Type": "MessageTemplate",
+        "Alias": "Msg"
+      },
+      "Data": {
+        "$type": "Comindware.Platform.Contracts.MakeMessageRuleModel, Comindware.Platform.Contracts",
+        "MessageType": {
+          "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+          "Type": "MessageTemplate",
+          "Alias": "Msg"
+        },
+        "PropertyMap": {
+          "$type": "Comindware.Platform.Contracts.PropertyMapKeyValueModel[], Comindware.Platform.Contracts",
+          "$values": [
+            {
+              "$type": "Comindware.Platform.Contracts.PropertyMapKeyValueModel, Comindware.Platform.Contracts",
+              "Key": {
+                "$type": "Comindware.Platform.Contracts.ModificationActionModel, Comindware.Platform.Contracts",
+                "PropertyPath": {
+                  "$type": "Comindware.Platform.Contracts.GlobalAlias[], Comindware.Platform.Contracts",
+                  "$values": [
+                    {
+                      "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                      "Type": "MessageTemplateProperty",
+                      "Owner": "Msg",
+                      "Alias": "Datapodachi"
+                    }
+                  ]
+                },
+                "PropertyAction": "Replace"
+              },
+              "Value": {
+                "$type": "Comindware.Platform.Contracts.CalculationRuleModel, Comindware.Platform.Contracts",
+                "Type": "Calculation",
+                "Definition": {
+                  "$type": "Comindware.Platform.Contracts.PropertyRuleDefinitionModel, Comindware.Platform.Contracts",
+                  "PropertyPath": {
+                    "$type": "Comindware.Platform.Contracts.GlobalAlias[], Comindware.Platform.Contracts",
+                    "$values": [
+                      {
+                        "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                        "Type": "Attribute",
+                        "Owner": "Zayavkanaavtomobil",
+                        "Alias": "Vremyapodachi"
+                      }
+                    ]
+                  },
+                  "Type": "Property"
+                }
+              }
+            },
+            {
+              "$type": "Comindware.Platform.Contracts.PropertyMapKeyValueModel, Comindware.Platform.Contracts",
+              "Key": {
+                "$type": "Comindware.Platform.Contracts.ModificationActionModel, Comindware.Platform.Contracts",
+                "PropertyPath": {
+                  "$type": "Comindware.Platform.Contracts.GlobalAlias[], Comindware.Platform.Contracts",
+                  "$values": [
+                    {
+                      "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                      "Type": "MessageTemplateProperty",
+                      "Owner": "Msg",
+                      "Alias": "Emailpassazhira"
+                    }
+                  ]
+                },
+                "PropertyAction": "Replace"
+              },
+              "Value": {
+                "$type": "Comindware.Platform.Contracts.CalculationRuleModel, Comindware.Platform.Contracts",
+                "Type": "Calculation",
+                "Definition": {
+                  "$type": "Comindware.Platform.Contracts.PropertyRuleDefinitionModel, Comindware.Platform.Contracts",
+                  "PropertyPath": {
+                    "$type": "Comindware.Platform.Contracts.GlobalAlias[], Comindware.Platform.Contracts",
+                    "$values": [
+                      {
+                        "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                        "Type": "Attribute",
+                        "Owner": "Zayavkanaavtomobil",
+                        "Alias": "Emailpassazhira"
+                      }
+                    ]
+                  },
+                  "Type": "Property"
+                }
+              }
+            }
+          ]
+        },
+        "Type": "MakeMessage"
+      }
+    }
+  },
+  "BehaviourState": "Undefined",
+  "Title": "Уведомление пассажира",
+  "IsTitleSet": false,
+  "Position": {
+    "$type": "Comindware.Platform.Contracts.VectorModel, Comindware.Platform.Contracts",
+    "X": 1040.0,
+    "Y": 413.436552552577
+  },
+  "Size": {
+    "$type": "Comindware.Platform.Contracts.DimensionsModel, Comindware.Platform.Contracts",
+    "Width": 40.0,
+    "Height": 40.0
+  },
+  "Owner": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+    "Type": "Activity",
+    "Owner": "Zakazavtotransporta",
+    "Alias": "lane2"
+  },
+  "OwnerEmbeddedProcessActivityAlias": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+    "Type": "Undefined"
+  },
+  "MountedOnAlias": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+    "Type": "Undefined"
+  },
+  "Type": "IntermediateEvent"
+}

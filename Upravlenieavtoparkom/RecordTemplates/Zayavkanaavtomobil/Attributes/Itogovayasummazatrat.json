@@ -1,0 +1,28 @@
+{
+  "$type": "Comindware.Platform.Contracts.AttributeModel, Comindware.Platform.Contracts",
+  "GlobalAlias": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+    "Type": "Attribute",
+    "Owner": "Zayavkanaavtomobil",
+    "Alias": "Itogovayasummazatrat"
+  },
+  "Type": "Decimal",
+  "Format": "Decimal",
+  "Name": "Итоговая сумма затрат",
+  "IsSystem": false,
+  "IsDisabled": false,
+  "IsUnique": false,
+  "IsIndexed": false,
+  "IsTracked": false,
+  "IsDigitGrouping": true,
+  "IsMultiValue": false,
+  "IsTitle": false,
+  "IsMandatory": false,
+  "IsOwnership": false,
+  "IsCalculated": true,
+  "Expression": "SUM((from i in db->Zatraty where i->Zayavka == $id select i->Summa))",
+  "InstanceGlobalAlias": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+    "Type": "Undefined"
+  }
+}

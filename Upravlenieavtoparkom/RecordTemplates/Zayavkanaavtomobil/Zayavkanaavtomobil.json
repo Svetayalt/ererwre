@@ -1,0 +1,12 @@
+{
+  "$type": "Comindware.Platform.Contracts.TemplateInfoModel, Comindware.Platform.Contracts",
+  "Name": "Заявка на автомобиль",
+  "GlobalAlias": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+    "Type": "RecordTemplate",
+    "Alias": "Zayavkanaavtomobil"
+  },
+  "IsDisabled": false,
+  "IsReferenceData": false,
+  "IsTransferable": false
+}

@@ -1,0 +1,52 @@
+{
+  "$type": "Comindware.Platform.Contracts.CommunicationRouteModel, Comindware.Platform.Contracts",
+  "Name": "MsgForPassenger",
+  "CommunicationChannelName": "отправка почты",
+  "MessageType": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+    "Type": "MessageTemplate",
+    "Alias": "Msg"
+  },
+  "IsUsePersonalCommunicationChannel": false,
+  "PersonalChannelAccountProperty": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+    "Type": "Undefined"
+  },
+  "Map": {
+    "$type": "Comindware.Platform.Contracts.ResultHandlingMapModel[], Comindware.Platform.Contracts",
+    "$values": [
+      {
+        "$type": "Comindware.Platform.Contracts.ResultHandlingMapModel, Comindware.Platform.Contracts",
+        "MessageTypeAlias": "{Emailpassazhira}",
+        "ResponseKey": "ToAddress"
+      },
+      {
+        "$type": "Comindware.Platform.Contracts.ResultHandlingMapModel, Comindware.Platform.Contracts",
+        "MessageTypeAlias": "<p><span style=\"font-size:11.0pt\"><span><span style=\"font-family:&quot;Arial&quot;,sans-serif\">Вам заказан автотранспорт на дату:</span></span></span>{Datapodachi}</p>\n",
+        "ResponseKey": "Body"
+      },
+      {
+        "$type": "Comindware.Platform.Contracts.ResultHandlingMapModel, Comindware.Platform.Contracts",
+        "MessageTypeAlias": "Заказ автомобиля",
+        "ResponseKey": "Subject"
+      },
+      {
+        "$type": "Comindware.Platform.Contracts.ResultHandlingMapModel, Comindware.Platform.Contracts",
+        "MessageTypeAlias": "false",
+        "ResponseKey": "MeetingEnabled"
+      }
+    ]
+  },
+  "Type": "Outbound",
+  "DataSet": "MailSet",
+  "ResponseFormat": "AsIs",
+  "IsDisabled": false,
+  "MessageName": "MsgForPassenger",
+  "ProcessTemplate": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+    "Type": "Undefined"
+  },
+  "RouteTarget": "Undefined",
+  "IsInternal": false,
+  "Severity": "Undefined"
+}

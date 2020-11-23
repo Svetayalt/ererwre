@@ -1,0 +1,12 @@
+{
+  "$type": "Comindware.Platform.Contracts.TemplateInfoModel, Comindware.Platform.Contracts",
+  "Name": "План-график",
+  "GlobalAlias": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+    "Type": "RecordTemplate",
+    "Alias": "Plangrafik"
+  },
+  "IsDisabled": false,
+  "IsReferenceData": false,
+  "IsTransferable": false
+}

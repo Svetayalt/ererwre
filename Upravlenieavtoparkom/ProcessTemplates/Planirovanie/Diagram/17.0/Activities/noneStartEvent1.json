@@ -1,0 +1,61 @@
+{
+  "$type": "Comindware.Platform.Contracts.StartEventActivityModel, Comindware.Platform.Contracts",
+  "GlobalAlias": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+    "Type": "Activity",
+    "Owner": "Planirovanie",
+    "Alias": "noneStartEvent1"
+  },
+  "Form": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+    "Type": "Undefined"
+  },
+  "Kind": "Timer",
+  "IsInterrupting": false,
+  "TimerDefinition": {
+    "$type": "Comindware.Platform.Contracts.TimerEventDefinitionModel, Comindware.Platform.Contracts",
+    "Schedule": {
+      "$type": "Comindware.Platform.Contracts.ScheduleModel, Comindware.Platform.Contracts",
+      "IgnoreTime": false,
+      "OccurenceTime": "11:15:00",
+      "OlsonTimeZoneId": "Europe/Moscow",
+      "Algorithm": "Daily_Every_interval_day",
+      "RecurrenceType": "Daily",
+      "DayOfMonthNumber": "First",
+      "DayOfMonth": 0,
+      "MonthOfYear": 0,
+      "Interval": 1,
+      "IntervalHours": 0,
+      "IntervalDays": 0,
+      "RegenerateInterval": 0
+    }
+  },
+  "BehaviourState": "Undefined",
+  "Title": "Стартовое событие",
+  "IsTitleSet": false,
+  "Position": {
+    "$type": "Comindware.Platform.Contracts.VectorModel, Comindware.Platform.Contracts",
+    "X": 260.0,
+    "Y": 90.0
+  },
+  "Size": {
+    "$type": "Comindware.Platform.Contracts.DimensionsModel, Comindware.Platform.Contracts",
+    "Width": 40.0,
+    "Height": 40.0
+  },
+  "Owner": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+    "Type": "Activity",
+    "Owner": "Planirovanie",
+    "Alias": "pool1"
+  },
+  "OwnerEmbeddedProcessActivityAlias": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+    "Type": "Undefined"
+  },
+  "MountedOnAlias": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+    "Type": "Undefined"
+  },
+  "Type": "StartEvent"
+}

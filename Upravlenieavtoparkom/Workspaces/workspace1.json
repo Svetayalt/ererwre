@@ -1,0 +1,44 @@
+{
+  "$type": "Comindware.Platform.Contracts.RoleWorkspaceConfigurationModel, Comindware.Platform.Contracts",
+  "GlobalAlias": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+    "Type": "RoleWorkspace",
+    "Alias": "workspace1"
+  },
+  "Name": "Секретарь",
+  "Description": "",
+  "NavigationItems": {
+    "$type": "Comindware.Platform.Contracts.NavigationItemModel[], Comindware.Platform.Contracts",
+    "$values": [
+      {
+        "$type": "Comindware.Platform.Contracts.NavigationItemModel, Comindware.Platform.Contracts",
+        "Name": "Мои задачи",
+        "Description": "",
+        "Priority": 3,
+        "ItemType": "MyTasks",
+        "IconClass": "tasks",
+        "Severity": "None"
+      },
+      {
+        "$type": "Comindware.Platform.Contracts.NavigationItemModel, Comindware.Platform.Contracts",
+        "Name": "Заявки на автомобиль",
+        "Description": "",
+        "Container": "Zayavkanaavtomobil",
+        "Priority": 2,
+        "ItemType": "RecordTemplateList",
+        "IconClass": "list-alt",
+        "Target": "defaultList",
+        "Severity": "None"
+      },
+      {
+        "$type": "Comindware.Platform.Contracts.NavigationItemModel, Comindware.Platform.Contracts",
+        "Name": "Статистика заявок",
+        "Description": "Статистика заявок",
+        "Priority": 1,
+        "ItemType": "DashboardPage",
+        "IconClass": "chart-area",
+        "Severity": "None"
+      }
+    ]
+  }
+}

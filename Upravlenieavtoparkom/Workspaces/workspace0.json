@@ -1,0 +1,35 @@
+{
+  "$type": "Comindware.Platform.Contracts.RoleWorkspaceConfigurationModel, Comindware.Platform.Contracts",
+  "GlobalAlias": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+    "Type": "RoleWorkspace",
+    "Alias": "workspace0"
+  },
+  "Name": "Заказчик",
+  "Description": "",
+  "NavigationItems": {
+    "$type": "Comindware.Platform.Contracts.NavigationItemModel[], Comindware.Platform.Contracts",
+    "$values": [
+      {
+        "$type": "Comindware.Platform.Contracts.NavigationItemModel, Comindware.Platform.Contracts",
+        "Name": "Мои задачи",
+        "Description": "",
+        "Priority": 2,
+        "ItemType": "MyTasks",
+        "IconClass": "tasks",
+        "Severity": "None"
+      },
+      {
+        "$type": "Comindware.Platform.Contracts.NavigationItemModel, Comindware.Platform.Contracts",
+        "Name": "Создать",
+        "Description": "",
+        "Container": "Zakazavtotransporta",
+        "Priority": 1,
+        "ItemType": "Action",
+        "IconClass": "align-justify",
+        "Target": "createProcess",
+        "Severity": "None"
+      }
+    ]
+  }
+}

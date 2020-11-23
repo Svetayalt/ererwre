@@ -1,0 +1,109 @@
+{
+  "$type": "Comindware.Platform.Contracts.StartEventActivityModel, Comindware.Platform.Contracts",
+  "GlobalAlias": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+    "Type": "Activity",
+    "Owner": "Zakazavtotransporta",
+    "Alias": "noneStartEvent1"
+  },
+  "Form": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+    "Type": "ProcessForm",
+    "Owner": "Zakazavtotransporta",
+    "Alias": "formc479e252269240e88e1457a86e57f7ca"
+  },
+  "Kind": "None",
+  "IsInterrupting": false,
+  "BehaviourState": "Undefined",
+  "Title": "Стартовое событие",
+  "IsTitleSet": false,
+  "Position": {
+    "$type": "Comindware.Platform.Contracts.VectorModel, Comindware.Platform.Contracts",
+    "X": 380.0,
+    "Y": 180.0
+  },
+  "Size": {
+    "$type": "Comindware.Platform.Contracts.DimensionsModel, Comindware.Platform.Contracts",
+    "Width": 40.0,
+    "Height": 40.0
+  },
+  "Owner": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+    "Type": "Activity",
+    "Owner": "Zakazavtotransporta",
+    "Alias": "lane1"
+  },
+  "OwnerEmbeddedProcessActivityAlias": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+    "Type": "Undefined"
+  },
+  "MountedOnAlias": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+    "Type": "Undefined"
+  },
+  "Type": "StartEvent",
+  "OnExitRules": {
+    "$type": "Comindware.Platform.Contracts.RuleModel[], Comindware.Platform.Contracts",
+    "$values": [
+      {
+        "$type": "Comindware.Platform.Contracts.ModificationRuleModel, Comindware.Platform.Contracts",
+        "Action": {
+          "$type": "Comindware.Platform.Contracts.ModificationActionModel, Comindware.Platform.Contracts",
+          "PropertyPath": {
+            "$type": "Comindware.Platform.Contracts.GlobalAlias[], Comindware.Platform.Contracts",
+            "$values": [
+              {
+                "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                "Type": "Attribute",
+                "Owner": "Zayavkanaavtomobil",
+                "Alias": "Nomerzayavki"
+              }
+            ]
+          },
+          "PropertyAction": "Replace"
+        },
+        "Name": "Изменить значение",
+        "Type": "Modification",
+        "Definition": {
+          "$type": "Comindware.Platform.Contracts.ExpressionRuleDefinitionModel, Comindware.Platform.Contracts",
+          "Expression": "FORMAT(\"ЗA-{0}\",LIST(COUNT((from i in db->Zayavkanaavtomobil select i->id))))",
+          "Type": "Expression"
+        }
+      },
+      {
+        "$type": "Comindware.Platform.Contracts.ModificationRuleModel, Comindware.Platform.Contracts",
+        "Action": {
+          "$type": "Comindware.Platform.Contracts.ModificationActionModel, Comindware.Platform.Contracts",
+          "PropertyPath": {
+            "$type": "Comindware.Platform.Contracts.GlobalAlias[], Comindware.Platform.Contracts",
+            "$values": [
+              {
+                "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                "Type": "Attribute",
+                "Owner": "Zayavkanaavtomobil",
+                "Alias": "IDprotsessa"
+              }
+            ]
+          },
+          "PropertyAction": "Replace"
+        },
+        "Name": "Изменить значение",
+        "Type": "Modification",
+        "Definition": {
+          "$type": "Comindware.Platform.Contracts.PropertyRuleDefinitionModel, Comindware.Platform.Contracts",
+          "PropertyPath": {
+            "$type": "Comindware.Platform.Contracts.GlobalAlias[], Comindware.Platform.Contracts",
+            "$values": [
+              {
+                "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                "Type": "Attribute",
+                "Alias": "id"
+              }
+            ]
+          },
+          "Type": "Property"
+        }
+      }
+    ]
+  }
+}

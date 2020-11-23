@@ -1,0 +1,55 @@
+{
+  "$type": "Comindware.Platform.Contracts.RoleWorkspaceConfigurationModel, Comindware.Platform.Contracts",
+  "GlobalAlias": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+    "Type": "RoleWorkspace",
+    "Alias": "workspace2"
+  },
+  "Name": "Диспетчер гаража",
+  "Description": "",
+  "NavigationItems": {
+    "$type": "Comindware.Platform.Contracts.NavigationItemModel[], Comindware.Platform.Contracts",
+    "$values": [
+      {
+        "$type": "Comindware.Platform.Contracts.NavigationItemModel, Comindware.Platform.Contracts",
+        "Name": "Мои задачи",
+        "Description": "",
+        "Priority": 4,
+        "ItemType": "MyTasks",
+        "IconClass": "tasks",
+        "Severity": "None"
+      },
+      {
+        "$type": "Comindware.Platform.Contracts.NavigationItemModel, Comindware.Platform.Contracts",
+        "Name": "Статистика заявок",
+        "Description": "Статистика заявок",
+        "Priority": 3,
+        "ItemType": "DashboardPage",
+        "IconClass": "chart-area",
+        "Severity": "None"
+      },
+      {
+        "$type": "Comindware.Platform.Contracts.NavigationItemModel, Comindware.Platform.Contracts",
+        "Name": "Заявки на автомобиль",
+        "Description": "",
+        "Container": "Zayavkanaavtomobil",
+        "Priority": 2,
+        "ItemType": "RecordTemplateList",
+        "IconClass": "list-alt",
+        "Target": "defaultList",
+        "Severity": "None"
+      },
+      {
+        "$type": "Comindware.Platform.Contracts.NavigationItemModel, Comindware.Platform.Contracts",
+        "Name": "Затраты",
+        "Description": "",
+        "Container": "Zatraty",
+        "Priority": 1,
+        "ItemType": "RecordTemplateList",
+        "IconClass": "list-alt",
+        "Target": "defaultList",
+        "Severity": "None"
+      }
+    ]
+  }
+}

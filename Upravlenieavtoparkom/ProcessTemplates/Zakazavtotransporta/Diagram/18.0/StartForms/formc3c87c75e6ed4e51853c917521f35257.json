@@ -1,0 +1,73 @@
+{
+  "$type": "Comindware.Platform.Contracts.FormModel, Comindware.Platform.Contracts",
+  "GlobalAlias": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+    "Type": "ProcessForm",
+    "Owner": "Zakazavtotransporta",
+    "Alias": "formc3c87c75e6ed4e51853c917521f35257"
+  },
+  "IsDefault": false,
+  "Root": {
+    "$type": "Comindware.Platform.Contracts.VerticalLayoutModel, Comindware.Platform.Contracts",
+    "Rows": {
+      "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.FormComponentModel, Comindware.Platform.Contracts]], mscorlib",
+      "$values": [
+        {
+          "$type": "Comindware.Platform.Contracts.StaticContentModel, Comindware.Platform.Contracts",
+          "Content": {
+            "$type": "Comindware.Platform.Contracts.LocalizedTextModel, Comindware.Platform.Contracts",
+            "En": "<p><span style=\"font-size:11.0pt;\"><span><span style=\"font-family:&quot;\"><span style=\"color:#1f497d;\">Машина выделена</span></span></span></span></p>\n",
+            "De": "<p><span style=\"font-size:11.0pt;\"><span><span style=\"font-family:&quot;\"><span style=\"color:#1f497d;\">Машина выделена</span></span></span></span></p>\n",
+            "Ru": "<p><span style=\"font-size:11.0pt;\"><span><span style=\"font-family:&quot;\"><span style=\"color:#1f497d;\">Машина выделена</span></span></span></span></p>\n"
+          },
+          "GlobalAlias": {
+            "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+            "Type": "FormComponent",
+            "Alias": "StaticContentComponent"
+          },
+          "AccessType": "Undefined",
+          "Width": 0,
+          "Type": "StaticContent"
+        },
+        {
+          "$type": "Comindware.Platform.Contracts.SubFormModel, Comindware.Platform.Contracts",
+          "Name": "Заявка на автомобиль - Основная форма",
+          "DataSourcePropertyPath": {
+            "$type": "Comindware.Platform.Contracts.GlobalAlias[], Comindware.Platform.Contracts",
+            "$values": [
+              {
+                "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                "Type": "Attribute",
+                "Alias": "cmw.task.objectId"
+              },
+              {
+                "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+                "Type": "Form",
+                "Owner": "Zayavkanaavtomobil",
+                "Alias": "defaultForm"
+              }
+            ]
+          },
+          "GlobalAlias": {
+            "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+            "Type": "FormComponent",
+            "Alias": "defaultForm"
+          },
+          "AccessType": "Readonly",
+          "Width": 0,
+          "Type": "SubForm"
+        }
+      ]
+    },
+    "GlobalAlias": {
+      "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+      "Type": "FormComponent",
+      "Alias": "default_Root"
+    },
+    "AccessType": "Undefined",
+    "Width": 0,
+    "Type": "VerticalLayout"
+  },
+  "Name": "Новая форма",
+  "Origination": "Undefined"
+}
