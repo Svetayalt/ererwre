@@ -1,0 +1,260 @@
+{
+  "$type": "Comindware.Platform.Contracts.BehaviourStateModel, Comindware.Platform.Contracts",
+  "Alias": "systemSolution",
+  "Kind": "Solution",
+  "State": "Active",
+  "Children": {
+    "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.BehaviourStateModel, Comindware.Platform.Contracts]], mscorlib",
+    "$values": [
+      {
+        "$type": "Comindware.Platform.Contracts.BehaviourStateModel, Comindware.Platform.Contracts",
+        "Alias": "События",
+        "Kind": "Collection",
+        "State": "Suspend",
+        "Children": {
+          "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.BehaviourStateModel, Comindware.Platform.Contracts]], mscorlib",
+          "$values": []
+        }
+      },
+      {
+        "$type": "Comindware.Platform.Contracts.BehaviourStateModel, Comindware.Platform.Contracts",
+        "Alias": "OData интеграции",
+        "Kind": "Collection",
+        "State": "Active",
+        "Children": {
+          "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.BehaviourStateModel, Comindware.Platform.Contracts]], mscorlib",
+          "$values": [
+            {
+              "$type": "Comindware.Platform.Contracts.BehaviourStateModel, Comindware.Platform.Contracts",
+              "Alias": "команда проекта",
+              "Kind": "OdataIntegration",
+              "State": "Active"
+            },
+            {
+              "$type": "Comindware.Platform.Contracts.BehaviourStateModel, Comindware.Platform.Contracts",
+              "Alias": "заявка на дополнительный проект",
+              "Kind": "OdataIntegration",
+              "State": "Active"
+            },
+            {
+              "$type": "Comindware.Platform.Contracts.BehaviourStateModel, Comindware.Platform.Contracts",
+              "Alias": "табель учета рабочего времени",
+              "Kind": "OdataIntegration",
+              "State": "Active"
+            },
+            {
+              "$type": "Comindware.Platform.Contracts.BehaviourStateModel, Comindware.Platform.Contracts",
+              "Alias": "технологический процесс",
+              "Kind": "OdataIntegration",
+              "State": "Active"
+            },
+            {
+              "$type": "Comindware.Platform.Contracts.BehaviourStateModel, Comindware.Platform.Contracts",
+              "Alias": "план-график",
+              "Kind": "OdataIntegration",
+              "State": "Active"
+            },
+            {
+              "$type": "Comindware.Platform.Contracts.BehaviourStateModel, Comindware.Platform.Contracts",
+              "Alias": "роль в проекте",
+              "Kind": "OdataIntegration",
+              "State": "Active"
+            },
+            {
+              "$type": "Comindware.Platform.Contracts.BehaviourStateModel, Comindware.Platform.Contracts",
+              "Alias": "статус работы",
+              "Kind": "OdataIntegration",
+              "State": "Active"
+            },
+            {
+              "$type": "Comindware.Platform.Contracts.BehaviourStateModel, Comindware.Platform.Contracts",
+              "Alias": "вид работы",
+              "Kind": "OdataIntegration",
+              "State": "Active"
+            },
+            {
+              "$type": "Comindware.Platform.Contracts.BehaviourStateModel, Comindware.Platform.Contracts",
+              "Alias": "статус фазы проекта",
+              "Kind": "OdataIntegration",
+              "State": "Active"
+            },
+            {
+              "$type": "Comindware.Platform.Contracts.BehaviourStateModel, Comindware.Platform.Contracts",
+              "Alias": "статус проекта",
+              "Kind": "OdataIntegration",
+              "State": "Active"
+            },
+            {
+              "$type": "Comindware.Platform.Contracts.BehaviourStateModel, Comindware.Platform.Contracts",
+              "Alias": "Вип проектного документа",
+              "Kind": "OdataIntegration",
+              "State": "Active"
+            },
+            {
+              "$type": "Comindware.Platform.Contracts.BehaviourStateModel, Comindware.Platform.Contracts",
+              "Alias": "Статус проектного документа",
+              "Kind": "OdataIntegration",
+              "State": "Active"
+            },
+            {
+              "$type": "Comindware.Platform.Contracts.BehaviourStateModel, Comindware.Platform.Contracts",
+              "Alias": "Заявка на проект",
+              "Kind": "OdataIntegration",
+              "State": "Active"
+            },
+            {
+              "$type": "Comindware.Platform.Contracts.BehaviourStateModel, Comindware.Platform.Contracts",
+              "Alias": "Требование",
+              "Kind": "OdataIntegration",
+              "State": "Active"
+            },
+            {
+              "$type": "Comindware.Platform.Contracts.BehaviourStateModel, Comindware.Platform.Contracts",
+              "Alias": "Статус требования",
+              "Kind": "OdataIntegration",
+              "State": "Active"
+            }
+          ]
+        }
+      },
+      {
+        "$type": "Comindware.Platform.Contracts.BehaviourStateModel, Comindware.Platform.Contracts",
+        "Alias": "Процессы",
+        "Kind": "Collection",
+        "State": "Active",
+        "Children": {
+          "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.BehaviourStateModel, Comindware.Platform.Contracts]], mscorlib",
+          "$values": [
+            {
+              "$type": "Comindware.Platform.Contracts.BehaviourStateModel, Comindware.Platform.Contracts",
+              "Alias": "protsess11",
+              "Kind": "Process",
+              "State": "Active",
+              "Children": {
+                "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.BehaviourStateModel, Comindware.Platform.Contracts]], mscorlib",
+                "$values": [
+                  {
+                    "$type": "Comindware.Platform.Contracts.BehaviourStateModel, Comindware.Platform.Contracts",
+                    "Alias": "4.0",
+                    "Kind": "ProcessScheme",
+                    "State": "Active",
+                    "Children": {
+                      "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.BehaviourStateModel, Comindware.Platform.Contracts]], mscorlib",
+                      "$values": [
+                        {
+                          "$type": "Comindware.Platform.Contracts.BehaviourStateModel, Comindware.Platform.Contracts",
+                          "Alias": "noneStartEvent1",
+                          "Kind": "NoneEvent",
+                          "State": "Active"
+                        },
+                        {
+                          "$type": "Comindware.Platform.Contracts.BehaviourStateModel, Comindware.Platform.Contracts",
+                          "Alias": "userTask1",
+                          "Kind": "UserTask",
+                          "State": "Active"
+                        },
+                        {
+                          "$type": "Comindware.Platform.Contracts.BehaviourStateModel, Comindware.Platform.Contracts",
+                          "Alias": "noneEndEvent1",
+                          "Kind": "NoneEvent",
+                          "State": "Active"
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "$type": "Comindware.Platform.Contracts.BehaviourStateModel, Comindware.Platform.Contracts",
+                    "Alias": "3.0",
+                    "Kind": "ProcessScheme",
+                    "State": "Active",
+                    "Children": {
+                      "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.BehaviourStateModel, Comindware.Platform.Contracts]], mscorlib",
+                      "$values": [
+                        {
+                          "$type": "Comindware.Platform.Contracts.BehaviourStateModel, Comindware.Platform.Contracts",
+                          "Alias": "noneStartEvent1",
+                          "Kind": "NoneEvent",
+                          "State": "Active"
+                        },
+                        {
+                          "$type": "Comindware.Platform.Contracts.BehaviourStateModel, Comindware.Platform.Contracts",
+                          "Alias": "userTask1",
+                          "Kind": "UserTask",
+                          "State": "Active"
+                        },
+                        {
+                          "$type": "Comindware.Platform.Contracts.BehaviourStateModel, Comindware.Platform.Contracts",
+                          "Alias": "noneEndEvent1",
+                          "Kind": "NoneEvent",
+                          "State": "Active"
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "$type": "Comindware.Platform.Contracts.BehaviourStateModel, Comindware.Platform.Contracts",
+                    "Alias": "2.0",
+                    "Kind": "ProcessScheme",
+                    "State": "Active",
+                    "Children": {
+                      "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.BehaviourStateModel, Comindware.Platform.Contracts]], mscorlib",
+                      "$values": [
+                        {
+                          "$type": "Comindware.Platform.Contracts.BehaviourStateModel, Comindware.Platform.Contracts",
+                          "Alias": "noneStartEvent1",
+                          "Kind": "NoneEvent",
+                          "State": "Active"
+                        },
+                        {
+                          "$type": "Comindware.Platform.Contracts.BehaviourStateModel, Comindware.Platform.Contracts",
+                          "Alias": "userTask1",
+                          "Kind": "UserTask",
+                          "State": "Active"
+                        },
+                        {
+                          "$type": "Comindware.Platform.Contracts.BehaviourStateModel, Comindware.Platform.Contracts",
+                          "Alias": "noneEndEvent1",
+                          "Kind": "NoneEvent",
+                          "State": "Active"
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "$type": "Comindware.Platform.Contracts.BehaviourStateModel, Comindware.Platform.Contracts",
+                    "Alias": "1.0",
+                    "Kind": "ProcessScheme",
+                    "State": "Active",
+                    "Children": {
+                      "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.BehaviourStateModel, Comindware.Platform.Contracts]], mscorlib",
+                      "$values": [
+                        {
+                          "$type": "Comindware.Platform.Contracts.BehaviourStateModel, Comindware.Platform.Contracts",
+                          "Alias": "noneStartEvent1",
+                          "Kind": "NoneEvent",
+                          "State": "Active"
+                        },
+                        {
+                          "$type": "Comindware.Platform.Contracts.BehaviourStateModel, Comindware.Platform.Contracts",
+                          "Alias": "userTask1",
+                          "Kind": "UserTask",
+                          "State": "Active"
+                        },
+                        {
+                          "$type": "Comindware.Platform.Contracts.BehaviourStateModel, Comindware.Platform.Contracts",
+                          "Alias": "noneEndEvent1",
+                          "Kind": "NoneEvent",
+                          "State": "Active"
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,96 @@
+{
+  "$type": "Comindware.Platform.Contracts.SynchronizationConfigModel, Comindware.Platform.Contracts",
+  "Name": "план-график",
+  "OperationType": "Export",
+  "RecordTemplate": {
+    "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+    "Type": "RecordTemplate",
+    "Alias": "Schedule"
+  },
+  "ODataChannel": "HANA",
+  "ExternalTemplate": "SCHEDULE",
+  "ExportSettings": {
+    "$type": "Comindware.Platform.Contracts.ExportSettingsModel, Comindware.Platform.Contracts",
+    "DeleteRecordsAfterExport": false,
+    "ExportDisabled": false
+  },
+  "PropertyMap": {
+    "$type": "System.Collections.Generic.List`1[[Comindware.Platform.Contracts.PropertyMapModel, Comindware.Platform.Contracts]], mscorlib",
+    "$values": [
+      {
+        "$type": "Comindware.Platform.Contracts.PropertyMapModel, Comindware.Platform.Contracts",
+        "IsKey": true,
+        "ExternalPropertyKey": "ID",
+        "InternalPropertyKey": {
+          "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+          "Type": "Attribute",
+          "Alias": "id"
+        }
+      },
+      {
+        "$type": "Comindware.Platform.Contracts.PropertyMapModel, Comindware.Platform.Contracts",
+        "IsKey": false,
+        "ExternalPropertyKey": "CODE",
+        "InternalPropertyKey": {
+          "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+          "Type": "Attribute",
+          "Owner": "Schedule",
+          "Alias": "Code"
+        }
+      },
+      {
+        "$type": "Comindware.Platform.Contracts.PropertyMapModel, Comindware.Platform.Contracts",
+        "IsKey": false,
+        "ExternalPropertyKey": "DESCRIPTION",
+        "InternalPropertyKey": {
+          "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+          "Type": "Attribute",
+          "Owner": "Schedule",
+          "Alias": "Name"
+        }
+      },
+      {
+        "$type": "Comindware.Platform.Contracts.PropertyMapModel, Comindware.Platform.Contracts",
+        "IsKey": false,
+        "ExternalPropertyKey": "STATUS_ID",
+        "InternalPropertyKey": {
+          "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+          "Type": "Attribute",
+          "Owner": "Schedule",
+          "Alias": "Status"
+        }
+      },
+      {
+        "$type": "Comindware.Platform.Contracts.PropertyMapModel, Comindware.Platform.Contracts",
+        "IsKey": false,
+        "ExternalPropertyKey": "DATE_START",
+        "InternalPropertyKey": {
+          "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+          "Type": "Attribute",
+          "Owner": "Schedule",
+          "Alias": "StartDate"
+        }
+      },
+      {
+        "$type": "Comindware.Platform.Contracts.PropertyMapModel, Comindware.Platform.Contracts",
+        "IsKey": false,
+        "ExternalPropertyKey": "DATE_END",
+        "InternalPropertyKey": {
+          "$type": "Comindware.Platform.Contracts.GlobalAlias, Comindware.Platform.Contracts",
+          "Type": "Attribute",
+          "Owner": "Schedule",
+          "Alias": "EndDate"
+        }
+      }
+    ]
+  },
+  "ScheduleConfiguration": {
+    "$type": "Comindware.Platform.Contracts.ScheduleConfigurationModel, Comindware.Platform.Contracts",
+    "Type": "Manual"
+  },
+  "DeleteConditionConfiguration": {
+    "$type": "Comindware.Platform.Contracts.DeleteConditionConfigurationModel, Comindware.Platform.Contracts",
+    "DeleteNonExistent": false
+  },
+  "ObjectFetchingStrategy": "All"
+}
